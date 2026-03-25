@@ -1,0 +1,3 @@
+Hey this is Yash and I love python
+I am a pythonista and I love writing code in Python
+I work with AI and Machine Learning Applications
