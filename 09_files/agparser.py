@@ -1,7 +1,6 @@
 import argparse
 
 parser = argparse.ArgumentParser(description="Simple calculator")
-
 parser.add_argument("num1", type=float, help="First number")
 parser.add_argument("num2", type=float, help="Second number")
 parser.add_argument(
