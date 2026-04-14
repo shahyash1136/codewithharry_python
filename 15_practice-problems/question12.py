@@ -33,7 +33,7 @@ def parse_number(prompt: str) -> int:
         input_value = input(prompt).strip()
         try:
             if not input_value:
-                print("Input connot be empty.")
+                print("Input cannot be empty.")
                 continue
             value = int(input_value)
             if value <= 0:
