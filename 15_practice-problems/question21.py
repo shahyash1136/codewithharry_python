@@ -69,15 +69,12 @@ def get_even_odd_numbers(raw_values: list[int]) -> tuple[list[int], list[int]]:
 def main() -> None:
     user_input_lists = [[1, 2, 3, 4, 5, 6], [2, 32, 45, 54, 62]]
 
-    result = get_even_odd_numbers(user_input_lists[0])
-    even, odd = result
-    print(f"Even : {even}")
-    print(f"Odd : {odd}")
-
-    result_manual = get_even_odd_numbers(user_input_lists[1])
-    even, odd = result_manual
-    print(f"Even Manually: {even}")
-    print(f"Odd  Manually: {odd}")
+    for idx, lst in enumerate(user_input_lists, 1):
+        even, odd = get_even_odd_numbers(lst)
+        even_m, odd_m = get_even_odd_numbers_manually(lst)
+        print(f"\nList {idx}: {lst}")
+        print(f"  Builtin  → Even: {even}, Odd: {odd}")
+        print(f"  Manual   → Even: {even_m}, Odd: {odd_m}")
 
 
 if __name__ == "__main__":
